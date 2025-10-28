@@ -1,0 +1,176 @@
+.page {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+}
+
+.itemContent {
+  flex: 1;
+}
+
+.question {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+
+  strong {
+    color: #2c3e50;
+  }
+}
+
+.answer {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+
+  strong {
+    color: #2c3e50;
+  }
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+
+  span {
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    background: #f5f5f5;
+  }
+
+  .active {
+    background: #d4edda;
+    color: #155724;
+  }
+
+  .inactive {
+    background: #f8d7da;
+    color: #721c24;
+  }
+}
+
+.itemActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.empty {
+  padding: 3rem;
+  text-align: center;
+  color: #999;
+  background: white;
+  border-radius: 8px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  line-height: 1.6;
+
+  &:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+

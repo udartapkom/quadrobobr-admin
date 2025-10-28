@@ -1,0 +1,143 @@
+.page {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+
+  button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+
+    &.active {
+      background: #4CAF50;
+      color: white;
+      border-color: #4CAF50;
+    }
+  }
+}
+
+.messagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.messageCard {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid transparent;
+
+  &.unread {
+    border-left-color: #4CAF50;
+    background: #f9fff9;
+  }
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.messageInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+}
+
+.unreadBadge {
+  width: 10px;
+  height: 10px;
+  background: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.messageMeta {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.telegramBadge {
+  padding: 0.25rem 0.75rem;
+  background: #0088cc;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.messageContacts {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.95rem;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.messageText {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 4px;
+  border-left: 3px solid #ddd;
+}
+
+.messageActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.empty {
+  padding: 3rem;
+  text-align: center;
+  color: #999;
+  background: white;
+  border-radius: 8px;
+}
+
